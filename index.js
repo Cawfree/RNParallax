@@ -304,6 +304,7 @@ class RNParallax extends Component {
 
     return (
       <Animated.View
+        pointerEvents="box-none"
         style={[
           styles.bar,
           {
