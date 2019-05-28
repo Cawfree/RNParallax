@@ -338,7 +338,7 @@ class RNParallax extends Component {
           }
           return Animated.event(
             [{ nativeEvent: { contentOffset: { y: scrollY } } }],
-          )
+          )(e);
         }}
         {...extraScrollViewProps}
       >
