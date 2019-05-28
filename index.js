@@ -322,16 +322,25 @@ class RNParallax extends Component {
     const {
       renderContent, scrollEventThrottle, scrollViewStyle, contentContainerStyle, innerContainerStyle, scrollViewProps,
     } = this.props;
+    const {
+      onScroll,
+      ...extraScrollViewProps
+    } = scrollViewProps;
     const { scrollY } = this.state;
     return (
       <Animated.ScrollView
         style={[styles.scrollView, scrollViewStyle]}
         contentContainerStyle={contentContainerStyle}
         scrollEventThrottle={scrollEventThrottle}
-        onScroll={Animated.event(
-          [{ nativeEvent: { contentOffset: { y: scrollY } } }],
-        )}
-        {...scrollViewProps}
+        onScroll={(e) => {
+          if (onScroll) {
+            onScroll(e);
+          }
+          return Animated.event(
+            [{ nativeEvent: { contentOffset: { y: scrollY } } }],
+          )
+        }}
+        {...extraScrollViewProps}
       >
         <View style={[{ marginTop: this.getHeaderMaxHeight() }, innerContainerStyle]}>
           {renderContent()}
