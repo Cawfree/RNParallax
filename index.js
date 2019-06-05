@@ -30,7 +30,7 @@ const DEFAULT_TITLE_COLOR = 'white';
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'white',
+    //backgroundColor: 'white',
     flex: 1,
   },
   scrollView: {
