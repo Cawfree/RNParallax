@@ -24,9 +24,9 @@ const DEFAULT_HEADER_MIN_HEIGHT = NAV_BAR_HEIGHT;
 const DEFAULT_EXTRA_SCROLL_HEIGHT = 30;
 const DEFAULT_BACKGROUND_IMAGE_SCALE = 1.5;
 
-const DEFAULT_NAVBAR_COLOR = '#3498db';
-const DEFAULT_BACKGROUND_COLOR = '#303F9F';
-const DEFAULT_TITLE_COLOR = 'white';
+const DEFAULT_NAVBAR_COLOR = 'transparent';
+const DEFAULT_BACKGROUND_COLOR = 'transparent';
+const DEFAULT_TITLE_COLOR = 'transparent';
 
 const styles = StyleSheet.create({
   container: {
@@ -257,7 +257,6 @@ class RNParallax extends Component {
           {
             height: this.getHeaderHeight(),
             opacity: imageOpacity,
-            backgroundColor: backgroundImage ? 'transparent' : backgroundColor,
           },
         ]}
       >
