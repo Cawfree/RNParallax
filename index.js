@@ -200,7 +200,7 @@ class RNParallax extends Component {
           styles.backgroundImage,
           {
             height: this.getHeaderMaxHeight(),
-            opacity: imageOpacity,
+            //opacity: imageOpacity,
             transform: [{ translateY: imageTranslate }, { scale: imageScale }],
           },
         ]}
@@ -221,7 +221,7 @@ class RNParallax extends Component {
         style={{
           height: this.getHeaderMaxHeight(),
           backgroundColor,
-          opacity: imageOpacity,
+          //opacity: imageOpacity,
           transform: [{ translateY: imageTranslate }, { scale: imageScale }],
         }}
       />
@@ -239,7 +239,7 @@ class RNParallax extends Component {
           {
             height: this.getHeaderHeight(),
             backgroundColor: navbarColor,
-            opacity: navBarOpacity,
+            //opacity: navBarOpacity,
           },
         ]}
       />
@@ -256,7 +256,7 @@ class RNParallax extends Component {
           styles.header,
           {
             height: this.getHeaderHeight(),
-            opacity: imageOpacity,
+            //opacity: imageOpacity,
           },
         ]}
       >
@@ -280,7 +280,7 @@ class RNParallax extends Component {
               { translateY: titleTranslateY },
             ],
             height: this.getHeaderHeight(),
-            opacity: titleOpacity,
+            //opacity: titleOpacity,
           },
           headerTitleStyle
         ]}
@@ -308,7 +308,7 @@ class RNParallax extends Component {
           styles.bar,
           {
             height: this.getHeaderMinHeight(),
-            opacity: navBarOpacity,
+            //opacity: navBarOpacity,
           },
         ]}
       >
